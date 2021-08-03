@@ -1,0 +1,9 @@
+.DS_store
+.ipynb_checkpoints/
+__pycache__/
+env.py
+*.csv
+*.xlsx
+*lesson.ipynb
+*.json
+spark.*
