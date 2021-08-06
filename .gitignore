@@ -7,3 +7,4 @@ env.py
 *lesson.ipynb
 *.json
 spark.*
+*_json/
