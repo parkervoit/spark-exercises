@@ -81,11 +81,6 @@ def wrangle_311(spark: pyspark.sql.SparkSession) -> pyspark.sql.DataFrame:
     df = add_features(handle_dates(handle_dtypes(get_311_data(spark))))
     return join_departments(df, spark)
 
-
-# # ## Train Test Split
-# train, test = df.randomSplit([0.8, 0.2])
-# train, validate, test = df.randomSplit([0.6, 0.2, 0.2])
-
 if __name__ == "__main__":
     spark = pyspark.sql.SparkSession.builder.getOrCreate()
     df = wrangle_311(spark)
